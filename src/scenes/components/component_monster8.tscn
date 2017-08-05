@@ -1,0 +1,281 @@
+[gd_scene load_steps=81 format=1]
+
+[ext_resource path="res://scripts/components/component_monster8.gd" type="Script" id=1]
+[ext_resource path="res://sprites/misc/white.png" type="Texture" id=2]
+[ext_resource path="res://sprites/monster3/0001.tex" type="Texture" id=3]
+[ext_resource path="res://sprites/monster3/0002.tex" type="Texture" id=4]
+[ext_resource path="res://sprites/monster3/0003.tex" type="Texture" id=5]
+[ext_resource path="res://sprites/monster3/0004.tex" type="Texture" id=6]
+[ext_resource path="res://sprites/monster3/0005.tex" type="Texture" id=7]
+[ext_resource path="res://sprites/monster3/0006.tex" type="Texture" id=8]
+[ext_resource path="res://sprites/monster3/0007.tex" type="Texture" id=9]
+[ext_resource path="res://sprites/monster3/0008.tex" type="Texture" id=10]
+[ext_resource path="res://sprites/monster3/0009.tex" type="Texture" id=11]
+[ext_resource path="res://sprites/monster3/0010.tex" type="Texture" id=12]
+[ext_resource path="res://sprites/monster3/0011.tex" type="Texture" id=13]
+[ext_resource path="res://sprites/monster3/0012.tex" type="Texture" id=14]
+[ext_resource path="res://sprites/monster3/0013.tex" type="Texture" id=15]
+[ext_resource path="res://sprites/monster3/0014.tex" type="Texture" id=16]
+[ext_resource path="res://sprites/monster3/0015.tex" type="Texture" id=17]
+[ext_resource path="res://sprites/monster3/0016.tex" type="Texture" id=18]
+[ext_resource path="res://sprites/monster3/0017.tex" type="Texture" id=19]
+[ext_resource path="res://sprites/monster3/0018.tex" type="Texture" id=20]
+[ext_resource path="res://sprites/monster3/0019.tex" type="Texture" id=21]
+[ext_resource path="res://sprites/monster3/0020.tex" type="Texture" id=22]
+[ext_resource path="res://sprites/monster3/0021.tex" type="Texture" id=23]
+[ext_resource path="res://sprites/monster3/0022.tex" type="Texture" id=24]
+[ext_resource path="res://sprites/monster3/0023.tex" type="Texture" id=25]
+[ext_resource path="res://sprites/monster3/0024.tex" type="Texture" id=26]
+[ext_resource path="res://sprites/monster3/0025.tex" type="Texture" id=27]
+[ext_resource path="res://sprites/monster3/0026.tex" type="Texture" id=28]
+[ext_resource path="res://sprites/monster3/0027.tex" type="Texture" id=29]
+[ext_resource path="res://sprites/monster3/0028.tex" type="Texture" id=30]
+[ext_resource path="res://sprites/monster3/0029.tex" type="Texture" id=31]
+[ext_resource path="res://sprites/monster3/0030.tex" type="Texture" id=32]
+[ext_resource path="res://sprites/monster3/0031.tex" type="Texture" id=33]
+[ext_resource path="res://sprites/monster3/0032.tex" type="Texture" id=34]
+[ext_resource path="res://sprites/monster3/0033.tex" type="Texture" id=35]
+[ext_resource path="res://sprites/monster3/0034.tex" type="Texture" id=36]
+[ext_resource path="res://sprites/monster3/0035.tex" type="Texture" id=37]
+[ext_resource path="res://sprites/monster3/0036.tex" type="Texture" id=38]
+[ext_resource path="res://sprites/monster3/0037.tex" type="Texture" id=39]
+[ext_resource path="res://sprites/monster3/0038.tex" type="Texture" id=40]
+[ext_resource path="res://sprites/monster3/0039.tex" type="Texture" id=41]
+[ext_resource path="res://sprites/monster3/0040.tex" type="Texture" id=42]
+[ext_resource path="res://sprites/monster3/0041.tex" type="Texture" id=43]
+[ext_resource path="res://sprites/monster3/0042.tex" type="Texture" id=44]
+[ext_resource path="res://sprites/monster3/0043.tex" type="Texture" id=45]
+[ext_resource path="res://sprites/monster3/0044.tex" type="Texture" id=46]
+[ext_resource path="res://sprites/monster3/0045.tex" type="Texture" id=47]
+[ext_resource path="res://sprites/monster3/0046.tex" type="Texture" id=48]
+[ext_resource path="res://sprites/monster3/0047.tex" type="Texture" id=49]
+[ext_resource path="res://sprites/monster3/0048.tex" type="Texture" id=50]
+[ext_resource path="res://sprites/monster3/0049.tex" type="Texture" id=51]
+[ext_resource path="res://sprites/monster3/0050.tex" type="Texture" id=52]
+[ext_resource path="res://sprites/monster3/0051.tex" type="Texture" id=53]
+[ext_resource path="res://sprites/monster3/0052.tex" type="Texture" id=54]
+[ext_resource path="res://sprites/monster3/0053.tex" type="Texture" id=55]
+[ext_resource path="res://sprites/monster3/0054.tex" type="Texture" id=56]
+[ext_resource path="res://sprites/monster3/0055.tex" type="Texture" id=57]
+[ext_resource path="res://sprites/monster3/0056.tex" type="Texture" id=58]
+[ext_resource path="res://sprites/monster3/0057.tex" type="Texture" id=59]
+[ext_resource path="res://sprites/monster3/0058.tex" type="Texture" id=60]
+[ext_resource path="res://sprites/monster3/0059.tex" type="Texture" id=61]
+[ext_resource path="res://sprites/monster3/0060.tex" type="Texture" id=62]
+
+[sub_resource type="ConvexPolygonShape2D" id=30]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 26.4184, -35.8318, 16.7258, -26.6086, 0.590873, -17.5476, -7.21653, -16.0218, -0.474939, -35.4064, 16.12, -44.7915 )
+
+[sub_resource type="ConvexPolygonShape2D" id=31]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 28.5386, 21.6156, 22.1779, 27.413, 6.68535, 33.6225, -3.56799, 34.7916, -6.59693, 34.7916, -9.48475, 32.4067, -6.89982, 26.0954, 0.813956, 20.632, 21.2692, 11.6018 )
+
+[sub_resource type="ConvexPolygonShape2D" id=32]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 2.79275, 9.23016, -2.05354, 16.6087, -3.26511, 14.5005 )
+
+[sub_resource type="ConvexPolygonShape2D" id=33]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 2.48985, -43.2103, -3.87089, -36.6223, -6.29404, -37.6764 )
+
+[sub_resource type="ConvexPolygonShape2D" id=34]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -6.29404, -37.6764, -3.87089, -36.6223, -1.75065, -34.5142, -7.20271, -21.8652, -6.89982, -31.6155 )
+
+[sub_resource type="ConvexPolygonShape2D" id=35]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -2.05354, 16.6087, -1.75065, 20.0345, -6.89982, 26.0954, -3.26511, 14.5005 )
+
+[sub_resource type="ConvexPolygonShape2D" id=36]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -1.75065, 20.0345, 0.813956, 20.632, -6.89982, 26.0954 )
+
+[sub_resource type="ConvexPolygonShape2D" id=37]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -6.59693, 34.7916, -20.1106, 40.0779, -19.6213, 30.5753, -9.48475, 32.4067 )
+
+[sub_resource type="ConvexPolygonShape2D" id=38]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -19.6213, 30.5753, -20.1106, 40.0779, -28.846, 55.6076, -23.5589, 28.9941 )
+
+[sub_resource type="ConvexPolygonShape2D" id=39]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -23.5589, 28.9941, -28.846, 55.6076, -32.0813, 64.99, -29.8166, 14.8423 )
+
+[sub_resource type="ConvexPolygonShape2D" id=40]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -7.21653, -16.0218, -11.7441, -12.5889, -0.474939, -35.4064 )
+
+[sub_resource type="ConvexPolygonShape2D" id=41]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -1.75065, -34.5142, -0.474939, -35.4064, -7.20271, -21.8652 )
+
+[sub_resource type="ConvexPolygonShape2D" id=42]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -33.699, -78.9824, -29.8166, -50.835, -27.7994, -30.0344, -32.0813, 64.99, -33.699, 76.3137 )
+
+[sub_resource type="ConvexPolygonShape2D" id=43]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -27.7994, -30.0344, -23.8618, -18.4395, -26.2577, -1.33436, -29.8166, 14.8423 )
+
+[sub_resource type="ConvexPolygonShape2D" id=44]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -23.8618, -18.4395, -15.9866, -16.5948, -20.1942, -6.55454, -26.2577, -1.33436 )
+
+[sub_resource type="ConvexPolygonShape2D" id=45]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -20.1942, -6.55454, -15.9866, -16.5948, -7.20271, -21.8652, -11.7441, -12.5889 )
+
+[sub_resource type="SpriteFrames" id=12]
+
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="Animation" id=29]
+
+resource/name = "Idle"
+length = 2.0
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Area2D/AnimatedSprite:frame")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0, 1, 2 ),
+"transitions": FloatArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0, 29, 0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Area2D/CollisionPolygon2D:polygon")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = {
+"times": FloatArray( 0, 1, 2 ),
+"transitions": FloatArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2Array( -33.699, -78.9824, -29.8166, -50.835, -27.7994, -30.0344, -23.8618, -18.4395, -15.9866, -16.5948, -7.20271, -21.8652, -6.89982, -31.6155, -6.29404, -37.6764, 2.48985, -43.2103, -3.87089, -36.6223, -1.75065, -34.5142, -0.474939, -35.4064, 16.12, -44.7915, 26.4184, -35.8318, 16.7258, -26.6086, 0.590873, -17.5476, -7.21653, -16.0218, -11.7441, -12.5889, -20.1942, -6.55454, -26.2577, -1.33436, -29.8166, 14.8423, -23.5589, 28.9941, -19.6213, 30.5753, -9.48475, 32.4067, -6.89982, 26.0954, -3.26511, 14.5005, 2.79275, 9.23016, -2.05354, 16.6087, -1.75065, 20.0345, 0.813956, 20.632, 21.2692, 11.6018, 28.5386, 21.6156, 22.1779, 27.413, 6.68535, 33.6225, -3.56799, 34.7916, -6.59693, 34.7916, -20.1106, 40.0779, -28.846, 55.6076, -32.0813, 64.99, -33.699, 76.3137 ), Vector2Array( -33.699, -78.9824, -29.8166, -50.835, -27.7994, -30.0344, -22.0092, -21.3143, -15.5948, -19.1679, -5.97315, -27.3242, -6.89982, -31.6155, -7.94682, -44.2807, -0.545578, -48.1442, -5.72645, -41.4904, -3.75278, -39.5586, -1.53242, -41.0611, 10.0629, -53.2955, 22.8917, -47.7149, 17.7108, -34.1926, 7.59578, -26.0364, -0.792282, -23.89, -7.4534, -15.7337, -22.5026, -9.29456, -26.2577, -1.33436, -28.1769, 14.9596, -23.5589, 28.9941, -19.6213, 30.5753, -7.4534, 31.9161, -5.72645, 25.9062, -1.03899, 16.0328, 5.1287, 13.2425, -0.0521622, 18.3939, -1.53242, 22.0427, 4.14188, 21.1841, 21.6581, 14.3157, 31.033, 24.1891, 22.1515, 33.4186, 7.59578, 34.4918, 0.687965, 37.0674, -5.23303, 36.4235, -20.1106, 40.0779, -28.846, 55.6076, -32.0813, 64.99, -33.699, 76.3137 ), Vector2Array( -33.699, -78.9824, -29.8166, -50.835, -27.7994, -30.0344, -23.8618, -18.4395, -15.9866, -16.5948, -7.20271, -21.8652, -6.89982, -31.6155, -6.29404, -37.6764, 2.48985, -43.2103, -3.87089, -36.6223, -1.75065, -34.5142, -0.474939, -35.4064, 16.12, -44.7915, 26.4184, -35.8318, 16.7258, -26.6086, 0.590873, -17.5476, -7.21653, -16.0218, -11.7441, -12.5889, -20.1942, -6.55454, -26.2577, -1.33436, -29.8166, 14.8423, -23.5589, 28.9941, -19.6213, 30.5753, -9.48475, 32.4067, -6.89982, 26.0954, -3.26511, 14.5005, 2.79275, 9.23016, -2.05354, 16.6087, -1.75065, 20.0345, 0.813956, 20.632, 21.2692, 11.6018, 28.5386, 21.6156, 22.1779, 27.413, 6.68535, 33.6225, -3.56799, 34.7916, -6.59693, 34.7916, -20.1106, 40.0779, -28.846, 55.6076, -32.0813, 64.99, -33.699, 76.3137 ) ]
+}
+
+[node name="Monster" type="Node2D"]
+
+script/script = ExtResource( 1 )
+__meta__ = {
+"__editor_plugin_screen__": "2D"
+}
+
+[node name="Conceptor" type="Sprite" parent="."]
+
+visibility/visible = false
+transform/pos = Vector2( 51.8631, 283.859 )
+transform/scale = Vector2( 13.2999, 18.9075 )
+texture = ExtResource( 2 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+transform/pos = Vector2( 89.0639, 283.673 )
+input/pickable = true
+shapes/0/shape = SubResource( 30 )
+shapes/0/transform = Matrix32( -0.870012, 0, 0, 1, -9.00257, 1.99998 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 31 )
+shapes/1/transform = Matrix32( -0.870012, 0, 0, 1, -9.00257, 1.99998 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 32 )
+shapes/2/transform = Matrix32( -0.870012, 0, 0, 1, -9.00257, 1.99998 )
+shapes/2/trigger = false
+shapes/3/shape = SubResource( 33 )
+shapes/3/transform = Matrix32( -0.870012, 0, 0, 1, -9.00257, 1.99998 )
+shapes/3/trigger = false
+shapes/4/shape = SubResource( 34 )
+shapes/4/transform = Matrix32( -0.870012, 0, 0, 1, -9.00257, 1.99998 )
+shapes/4/trigger = false
+shapes/5/shape = SubResource( 35 )
+shapes/5/transform = Matrix32( -0.870012, 0, 0, 1, -9.00257, 1.99998 )
+shapes/5/trigger = false
+shapes/6/shape = SubResource( 36 )
+shapes/6/transform = Matrix32( -0.870012, 0, 0, 1, -9.00257, 1.99998 )
+shapes/6/trigger = false
+shapes/7/shape = SubResource( 37 )
+shapes/7/transform = Matrix32( -0.870012, 0, 0, 1, -9.00257, 1.99998 )
+shapes/7/trigger = false
+shapes/8/shape = SubResource( 38 )
+shapes/8/transform = Matrix32( -0.870012, 0, 0, 1, -9.00257, 1.99998 )
+shapes/8/trigger = false
+shapes/9/shape = SubResource( 39 )
+shapes/9/transform = Matrix32( -0.870012, 0, 0, 1, -9.00257, 1.99998 )
+shapes/9/trigger = false
+shapes/10/shape = SubResource( 40 )
+shapes/10/transform = Matrix32( -0.870012, 0, 0, 1, -9.00257, 1.99998 )
+shapes/10/trigger = false
+shapes/11/shape = SubResource( 41 )
+shapes/11/transform = Matrix32( -0.870012, 0, 0, 1, -9.00257, 1.99998 )
+shapes/11/trigger = false
+shapes/12/shape = SubResource( 42 )
+shapes/12/transform = Matrix32( -0.870012, 0, 0, 1, -9.00257, 1.99998 )
+shapes/12/trigger = false
+shapes/13/shape = SubResource( 43 )
+shapes/13/transform = Matrix32( -0.870012, 0, 0, 1, -9.00257, 1.99998 )
+shapes/13/trigger = false
+shapes/14/shape = SubResource( 44 )
+shapes/14/transform = Matrix32( -0.870012, 0, 0, 1, -9.00257, 1.99998 )
+shapes/14/trigger = false
+shapes/15/shape = SubResource( 45 )
+shapes/15/transform = Matrix32( -0.870012, 0, 0, 1, -9.00257, 1.99998 )
+shapes/15/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Area2D"]
+
+transform/pos = Vector2( -13, 0 )
+transform/scale = Vector2( 0.85, 0.85 )
+frames = SubResource( 12 )
+animation = "default"
+flip_h = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+
+transform/pos = Vector2( -9.00257, 1.99998 )
+transform/scale = Vector2( -0.870012, 1 )
+build_mode = 0
+polygon = Vector2Array( -33.699, -78.9824, -29.8166, -50.835, -27.7994, -30.0344, -23.8618, -18.4395, -15.9866, -16.5948, -7.20271, -21.8652, -6.89982, -31.6155, -6.29404, -37.6764, 2.48985, -43.2103, -3.87089, -36.6223, -1.75065, -34.5142, -0.474939, -35.4064, 16.12, -44.7915, 26.4184, -35.8318, 16.7258, -26.6086, 0.590873, -17.5476, -7.21653, -16.0218, -11.7441, -12.5889, -20.1942, -6.55454, -26.2577, -1.33436, -29.8166, 14.8423, -23.5589, 28.9941, -19.6213, 30.5753, -9.48475, 32.4067, -6.89982, 26.0954, -3.26511, 14.5005, 2.79275, 9.23016, -2.05354, 16.6087, -1.75065, 20.0345, 0.813956, 20.632, 21.2692, 11.6018, 28.5386, 21.6156, 22.1779, 27.413, 6.68535, 33.6225, -3.56799, 34.7916, -6.59693, 34.7916, -20.1106, 40.0779, -28.846, 55.6076, -32.0813, 64.99, -33.699, 76.3137 )
+shape_range = Vector2( 0, 15 )
+trigger = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/Idle = SubResource( 29 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = "Idle"
+
+

@@ -1,0 +1,168 @@
+[gd_scene load_steps=15 format=1]
+
+[ext_resource path="res://scripts/global.gd" type="Script" id=1]
+[ext_resource path="res://audio/sound0.wav" type="Sample" id=2]
+[ext_resource path="res://audio/sound1.wav" type="Sample" id=3]
+[ext_resource path="res://audio/sound2.wav" type="Sample" id=4]
+[ext_resource path="res://audio/sound3.wav" type="Sample" id=5]
+[ext_resource path="res://audio/sound4.wav" type="Sample" id=6]
+[ext_resource path="res://audio/sound5.wav" type="Sample" id=7]
+[ext_resource path="res://audio/sound6.wav" type="Sample" id=8]
+[ext_resource path="res://audio/sound7.wav" type="Sample" id=9]
+[ext_resource path="res://audio/sound8.wav" type="Sample" id=10]
+[ext_resource path="res://audio/sound9.wav" type="Sample" id=11]
+
+[sub_resource type="SampleLibrary" id=1]
+
+samples/sound0 = {
+"db": 0.0,
+"pitch": 2.0,
+"priority": 0,
+"sample": ExtResource( 2 )
+}
+samples/sound1 = {
+"db": 0.0,
+"pitch": 0.5,
+"priority": 0,
+"sample": ExtResource( 3 )
+}
+samples/sound2 = {
+"db": 0.0,
+"pitch": 1.0,
+"priority": 0,
+"sample": ExtResource( 4 )
+}
+samples/sound3 = {
+"db": 0.0,
+"pitch": 1.0,
+"priority": 0,
+"sample": ExtResource( 5 )
+}
+samples/sound4 = {
+"db": 0.0,
+"pitch": 0.25,
+"priority": 0,
+"sample": ExtResource( 6 )
+}
+samples/sound5 = {
+"db": 0.0,
+"pitch": 1.0,
+"priority": 0,
+"sample": ExtResource( 7 )
+}
+samples/sound6 = {
+"db": 0.0,
+"pitch": 1.0,
+"priority": 0,
+"sample": ExtResource( 8 )
+}
+samples/sound7 = {
+"db": 0.0,
+"pitch": 3.0,
+"priority": 0,
+"sample": ExtResource( 9 )
+}
+samples/sound8 = {
+"db": 0.0,
+"pitch": 0.75,
+"priority": 0,
+"sample": ExtResource( 10 )
+}
+samples/sound9 = {
+"db": 0.0,
+"pitch": 1.75,
+"priority": 0,
+"sample": ExtResource( 11 )
+}
+
+[sub_resource type="Animation" id=2]
+
+resource/name = "Fade In"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:stream/volume_db")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0, 0.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ -80.0, 0.0 ]
+}
+
+[sub_resource type="Animation" id=3]
+
+resource/name = "Fade Out"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:stream/volume_db")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0, 0.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, -80.0 ]
+}
+
+[node name="Global" type="Node"]
+
+script/script = ExtResource( 1 )
+__meta__ = {
+"__editor_plugin_screen__": "Script"
+}
+
+[node name="Sounds" type="SamplePlayer" parent="."]
+
+config/polyphony = 5
+config/samples = SubResource( 1 )
+default/volume_db = -1.25
+default/pitch_scale = 1.0
+default/pan = 0.0
+default/depth = 0.0
+default/height = 0.0
+default/filter/type = 0
+default/filter/cutoff = 5000.0
+default/filter/resonance = 1.0
+default/filter/gain = 1.0
+default/reverb_room = 2
+default/reverb_send = 0.0
+default/chorus_send = 0.0
+
+[node name="Theme" type="StreamPlayer" parent="."]
+
+stream/stream = null
+stream/play = false
+stream/loop = true
+stream/volume_db = 0.0
+stream/autoplay = false
+stream/paused = false
+stream/loop_restart_time = 0.0
+stream/buffering_ms = 500
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Theme"]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+"anims/Fade In" = SubResource( 2 )
+"anims/Fade Out" = SubResource( 3 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+
+[node name="Screen Handler" type="Node2D" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+
+process_mode = 1
+wait_time = 1.0
+one_shot = false
+autostart = true
+
+

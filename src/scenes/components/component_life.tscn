@@ -1,0 +1,136 @@
+[gd_scene load_steps=35 format=1]
+
+[ext_resource path="res://scripts/components/component_life.gd" type="Script" id=1]
+[ext_resource path="res://sprites/particules/0001.tex" type="Texture" id=2]
+[ext_resource path="res://sprites/particules/0002.tex" type="Texture" id=3]
+[ext_resource path="res://sprites/particules/0003.tex" type="Texture" id=4]
+[ext_resource path="res://sprites/particules/0004.tex" type="Texture" id=5]
+[ext_resource path="res://sprites/particules/0005.tex" type="Texture" id=6]
+[ext_resource path="res://sprites/particules/0006.tex" type="Texture" id=7]
+[ext_resource path="res://sprites/particules/0007.tex" type="Texture" id=8]
+[ext_resource path="res://sprites/particules/0008.tex" type="Texture" id=9]
+[ext_resource path="res://sprites/particules/0009.tex" type="Texture" id=10]
+[ext_resource path="res://sprites/particules/0010.tex" type="Texture" id=11]
+[ext_resource path="res://sprites/particules/0011.tex" type="Texture" id=12]
+[ext_resource path="res://sprites/particules/0012.tex" type="Texture" id=13]
+[ext_resource path="res://sprites/particules/0013.tex" type="Texture" id=14]
+[ext_resource path="res://sprites/particules/0014.tex" type="Texture" id=15]
+[ext_resource path="res://sprites/particules/0015.tex" type="Texture" id=16]
+[ext_resource path="res://sprites/particules/0016.tex" type="Texture" id=17]
+[ext_resource path="res://sprites/particules/0017.tex" type="Texture" id=18]
+[ext_resource path="res://sprites/particules/0018.tex" type="Texture" id=19]
+[ext_resource path="res://sprites/particules/0019.tex" type="Texture" id=20]
+[ext_resource path="res://sprites/particules/0020.tex" type="Texture" id=21]
+[ext_resource path="res://sprites/particules/0021.tex" type="Texture" id=22]
+[ext_resource path="res://sprites/particules/0022.tex" type="Texture" id=23]
+[ext_resource path="res://sprites/particules/0023.tex" type="Texture" id=24]
+[ext_resource path="res://sprites/particules/0024.tex" type="Texture" id=25]
+[ext_resource path="res://sprites/particules/0025.tex" type="Texture" id=26]
+[ext_resource path="res://sprites/particules/0026.tex" type="Texture" id=27]
+[ext_resource path="res://sprites/particules/0027.tex" type="Texture" id=28]
+[ext_resource path="res://sprites/particules/0028.tex" type="Texture" id=29]
+[ext_resource path="res://sprites/particules/0029.tex" type="Texture" id=30]
+[ext_resource path="res://sprites/particules/0030.tex" type="Texture" id=31]
+
+[sub_resource type="CircleShape2D" id=3]
+
+custom_solver_bias = 0.0
+radius = 10.0
+
+[sub_resource type="SpriteFrames" id=2]
+
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="Animation" id=1]
+
+resource/name = "Idle"
+length = 2.0
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Area2D/AnimatedSprite:frame")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0, 1, 2 ),
+"transitions": FloatArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0, 29, 0 ]
+}
+
+[node name="Particule" type="Node2D"]
+
+script/script = ExtResource( 1 )
+__meta__ = {
+"__editor_plugin_screen__": "Script"
+}
+
+[node name="Area2D" type="Area2D" parent="."]
+
+transform/pos = Vector2( 50, 285 )
+transform/scale = Vector2( 0.7, 0.7 )
+input/pickable = true
+shapes/0/shape = SubResource( 3 )
+shapes/0/transform = Matrix32( 1.24132, 0, 0, 1.2751, 0.657765, -0.782447 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="Particles2D" type="Particles2D" parent="Area2D"]
+
+transform/scale = Vector2( 0.9, 0.9 )
+config/amount = 24
+config/lifetime = 2.0
+config/emitting = false
+config/process_mode = 1
+params/direction = 0.0
+params/spread = 180.0
+params/linear_velocity = 20.0
+params/spin_velocity = 0.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 0.0
+params/gravity_strength = 0.0
+params/radial_accel = 0.0
+params/tangential_accel = 0.0
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 1.0
+params/final_size = 1.0
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+color/color = Color( 1, 1, 1, 0.596967 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Area2D"]
+
+frames = SubResource( 2 )
+animation = "default"
+modulate = Color( 0.615057, 1, 0.760341, 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+
+transform/pos = Vector2( 0.657765, -0.782447 )
+transform/scale = Vector2( 1.24132, 1.2751 )
+shape = SubResource( 3 )
+trigger = false
+_update_shape_index = 0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/Idle = SubResource( 1 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = "Idle"
+
+
