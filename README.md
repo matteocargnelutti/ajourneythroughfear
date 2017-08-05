@@ -16,12 +16,10 @@ Scenes were converted from .scn to .tscn in ordrer to make them readable on GitH
 
 ## Redistribution and "License"
 
-You are obviously free to take inspiration from the source code, if anything can help you in your Godot project.
+You are obviously free to use the source code, if anything can help you in your Godot project.
 
-The repository comes with the game's assets and a .apk release file, in ordrer for you to be able to check the project's structure in the Godot Engine Editor, or directly test the game on an Android device :
-YOU ARE NOT ALLOWED TO REDISTRIBUTE OR USE THE GAME'S APK AND ITS ASSETS.
-
-Hope you'll enjoy it :) !
+The repository comes with the game's assets and an .apk release file, in ordrer for you to be able to check the project's structure in the Godot Engine Editor, or directly test the game on an Android device :
+YOU ARE NOT ALLOWED TO REDISTRIBUTE / USE IN A PROJECT THE GAME'S APK AND ITS ASSETS : THEY ARE ONLY AVAILABLE FOR TESTING PURPOSES.
 
 ## Screenshots
 
