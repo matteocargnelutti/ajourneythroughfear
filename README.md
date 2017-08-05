@@ -14,12 +14,6 @@ Code in GDScript.
 
 Scenes were converted from .scn to .tscn in ordrer to make them readable on GitHub.
 
-## Screenshots
-
-![alt text](https://raw.githubusercontent.com/matteocargnelutti/ajourneythroughfear/master/screenshots/Screenshot_20151210-235048.png)
-![alt text](https://raw.githubusercontent.com/matteocargnelutti/ajourneythroughfear/master/screenshots/Screenshot_20151203-184208.png)
-![alt text](https://raw.githubusercontent.com/matteocargnelutti/ajourneythroughfear/master/screenshots/Screenshot_20151210-232609.png)
-
 ## Redistribution and "License"
 
 You are obviously free to take inspiration from the source code, if anything can help you in your Godot project.
@@ -28,4 +22,11 @@ The repository comes with the game's assets and a .apk release file, in ordrer f
 YOU ARE NOT ALLOWED TO REDISTRIBUTE OR USE THE GAME'S APK AND ITS ASSETS.
 
 Hope you'll enjoy it :) !
+
+## Screenshots
+
+![alt text](https://raw.githubusercontent.com/matteocargnelutti/ajourneythroughfear/master/screenshots/Screenshot_20151210-235048.png)
+![alt text](https://raw.githubusercontent.com/matteocargnelutti/ajourneythroughfear/master/screenshots/Screenshot_20151203-184208.png)
+![alt text](https://raw.githubusercontent.com/matteocargnelutti/ajourneythroughfear/master/screenshots/Screenshot_20151210-232609.png)
+
 
