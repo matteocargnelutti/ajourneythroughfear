@@ -14,7 +14,13 @@ Code in GDScript.
 
 Scenes were converted from .scn to .tscn in ordrer to make them readable on GitHub.
 
-## Redistribution
+## Screenshots
+
+![alt text](https://raw.githubusercontent.com/matteocargnelutti/ajourneythroughfear/master/screenshots/Screenshot_20151210-235048.png)
+![alt text](https://raw.githubusercontent.com/matteocargnelutti/ajourneythroughfear/master/screenshots/Screenshot_20151203-184208.png)
+![alt text](https://raw.githubusercontent.com/matteocargnelutti/ajourneythroughfear/master/screenshots/Screenshot_20151210-232609.png)
+
+## Redistribution and "License"
 
 You are obviously free to take inspiration from the source code, if anything can help you in your Godot project.
 
