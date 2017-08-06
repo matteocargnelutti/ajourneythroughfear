@@ -4,7 +4,7 @@
 
 An horizontal runner game made with Godot Engine.
 
-Code & art : 2015, Matteo Cargnelutti (mail@elseif.eu)
+Code & art : 2015, Matteo Cargnelutti
 
 ## Basic infos
 
