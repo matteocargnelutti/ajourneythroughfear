@@ -20,7 +20,7 @@ You are obviously free to use the source code, if anything can help you in your 
 
 The repository comes with the game's assets and an .apk release file, in ordrer for you to be able to check the project's structure in the Godot Engine Editor, or directly test the game on an Android device :
 
-You are NOT allowed to redistribute / use in a project the game's APK nor its assets, which are only here for testing purposes.OSES.
+You are NOT allowed to redistribute / use in a project the game's APK nor its assets, which are only here for testing purposes.
 
 ## Screenshots
 
